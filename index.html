@@ -1,65 +1,104 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
-    <title>Cover Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Gee-Z</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-
-<div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-            <header class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand">Giese</h3>
-                    <nav class="nav nav-masthead">
-                        <a class="nav-link active" href="index.html">Home</a>
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-
-                    </nav>
-                </div>
-            </header>
-
-            <main role="main" class="inner cover">
-                <h1 class="cover-heading">Welcome to my Personal Website Project</h1>
-                <p class="lead">Currently messing around with Web Development as a way to show of my personal
-                    portfolio of past and current work as well as developing other skills in the process</p>
-            </main>
-
-            <footer class="mastfoot">
-                <div class="inner">
-                    <p style="font-style: italic">Made my Benjamin Giese - <a href="https://github.com/BenGiese22/">GitHub</a>. </p>
-                </div>
-            </footer>
-
+<!-- Header Div -->
+<!-- Image -->
+<div class="container" id="header">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="img/profile.jpg" class="img-thumbnail" id="profile_picture">
         </div>
-
+        <div class="col-sm">
+            <h1 id="name">Benjamin Giese</h1>
+            <h5 class="info">MSOE Software Engineering Student - Junior</h5>
+            <h5 class="info">BenGiese22@gmail.com</h5>
+        </div>
     </div>
 
+    <a href="https://github.com/BenGiese22" class="btn btn-info" tabindex="-1" role="button">Github Page</a>
 </div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../../../assets/js/vendor/popper.min.js"></script>
-<script src="../../../../dist/js/bootstrap.min.js"></script>
+<br>
+
+<!-- Div -->
+<div class="container" id="personal_projects">
+    <h3 class="project_title">Personal Projects</h3>
+    <div class="row">
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">Spotify Dashboard</h5>
+                <p class="card-text">Web-Based Application developed utilizing the Spotify API.</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/jstephani2/dashboard" class="btn btn-primary btn-sm">Go to
+                            Project...</a>
+                    </div>
+                    <div class="col-sm">
+                        <p class="code-identifier">Web-Based</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">Personal Website</h5>
+                <p class="card-text">The website you're currently browsing on.</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/BenGiese22/bengiese22.github.io" class="btn btn-primary btn-sm">Go
+                            to Project...</a>
+                    </div>
+                    <div class="col-sm">
+                        <p class="code-identifier">Web-Based</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Div -->
+<div class="container" id="work_projects">
+    <h3 class="project_title">Work Projects</h3>
+    <div class="row">
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">C-Cap Scraper</h5>
+                <p class="card-text">Scrape data from https://wcca.wicourts.gov/ while bypassing captcha
+                    requirement. </p>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/jstephani2/dashboard" class="btn btn-primary btn-sm">Go to
+                            Project...</a>
+                    </div>
+                    <div class="col-sm">
+                        <p class="code-identifier">Python</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 30rem;">
+            <div class="card-body">
+                <h5 class="card-title">Show2Lead</h5>
+                <p class="card-text">Import Leads from Showmojo to LeadSimple. <br> Pushed onto AWS-Lambda</p>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/BenGiese22/bengiese22.github.io" class="btn btn-primary btn-sm">Go
+                            to Project...</a>
+                    </div>
+                    <div class="col-sm">
+                        <p class="code-identifier">Go-Lang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

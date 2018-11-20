@@ -1,0 +1,48 @@
+body {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+}
+
+.code-identifier {
+    padding-right: 1px;
+    padding-top: 3px;
+    font-style: italic;
+    text-align: right;
+}
+
+.project_title {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    font-size: 15px;
+}
+
+#name {
+    text-align: center;
+    font-size: 60px;
+}
+
+#header {
+    height: 150px;
+}
+
+#profile_picture {
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+#personal_projects {
+    padding-bottom: 3%;
+}
+
+#work_projects {
+    padding-bottom: 3%;
+}
+
+
+
+
