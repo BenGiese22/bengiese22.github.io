@@ -1,6 +1,8 @@
 body {
-    margin-top: 2%;
     background-color: #f2f2f2;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 2%;
 }
 
 .code-identifier {
@@ -28,6 +30,11 @@ body {
     height: 150px;
 }
 
+#header_row {
+    align-items: center;
+    justify-content: center;
+}
+
 #profile_picture {
     max-width: 150px;
     max-height: 150px;
@@ -39,10 +46,17 @@ body {
     padding-bottom: 3%;
 }
 
+#personal_row {
+    justify-content: center;
+}
+
 #work_projects {
     padding-bottom: 3%;
 }
 
+#work_row {
+    justify-content: center;
+}
 
 
 
