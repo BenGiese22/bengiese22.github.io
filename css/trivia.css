@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.response {
+    text-align: center;
+}
+
+.v1 {
+    border-left: 3px solid black;
+    height: auto;
+}
+
+#question_col {
+    padding-bottom: 30px;
+
+}
+
+#answer_col {
+
+}
+
+#q_a_container {
+    border-style: solid;
+    border-width: 3px;
+}

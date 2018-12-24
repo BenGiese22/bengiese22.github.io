@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/trivia.css">
+
+</head>
+<body>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="js/trivia.js"></script>
+
+    <h3 style="padding-left: 10%">Trivia</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <button onclick="getRandomTrivia()"> Get Random </button>
+            </div>
+            <div class="col-sm-10">
+                <p id="difficulty">Difficulty: </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="q_a_container">
+        <div class="row">
+            <div id="question_col" class="col-sm">
+                <p class="header">Question</p>
+                <p id="question" class="response"></p>
+            </div>
+            <div class="v1">
+            </div>
+            <div id="answer_col" class="col-sm">
+                <p class="header">Answer</p>
+                <p id="answer" class="response"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
