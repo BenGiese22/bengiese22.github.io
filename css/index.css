@@ -12,10 +12,6 @@ body {
     text-align: right;
 }
 
-.project_title {
-    text-align: center;
-}
-
 .info {
     text-align: center;
     font-size: 15px;
@@ -42,27 +38,15 @@ body {
     height: auto;
 }
 
-#personal_projects {
-    padding-bottom: 3%;
-}
-
-#personal_row {
-    justify-content: center;
-}
-
-#work_projects {
-    padding-bottom: 3%;
-}
-
-#work_row {
-    justify-content: center;
-}
-
 #bottom_row {
     bottom: 0;
     justify-content: center;
     align-items: center;
     position: absolute;
+}
+
+#projects_row {
+    padding-bottom: 4px;
 }
 
 
