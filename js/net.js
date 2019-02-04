@@ -1,28 +1,34 @@
-var tmi = require('tmi.js');
+let target_channel;
 
-// Define configuration options
-var opts = {
-    options: {
-        debug: true
-    },
-    connection: {
-        reconnect: true
-    },
-    identity: {
-        username: "Leveled22",
-        password: "oauth:qj26e9v99aulexeswqh681umrg1uli",
-    },
-    channels: ['kickinkinger']
-};
+function say_in_chat() {
+    var msg = document.getElementById('message').value;
+    client.say(target_channel, msg);
+    document.getElementById('message').value = '';
+}
 
-var client = new tmi.client(opts);
+function login() {
+    var user = document.getElementById('username').value;
+    var pass = document.getElementById('password').value;
+    var channel = document.getElementById('channel').value;
+    new_sign_in(user, pass, channel);
+}
 
-client.connect();
-
-client.on("chat", (channel, user, message, self) => {
-    if(self) return
-})
-
-function onInputEnter() {
-    client.say('kickinkinger','hello world');
+function new_sign_in(user, pass, channel) {
+    target_channel = channel;
+    opt = {
+        options: {
+            debug: true
+        },
+        connection: {
+            secure: true,
+            reconnect: true
+        },
+        identity: {
+            username: user,
+            password: pass
+        },
+        channels: [channel]
+    };
+    client = new tmi.client(opt);
+    client.connect();
 }
