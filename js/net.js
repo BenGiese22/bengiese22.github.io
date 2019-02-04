@@ -11,6 +11,7 @@ function login() {
     var pass = document.getElementById('password').value;
     var channel = document.getElementById('channel').value;
     new_sign_in(user, pass, channel);
+    new_live_chat(channel);
 }
 
 function new_sign_in(user, pass, channel) {
@@ -31,4 +32,8 @@ function new_sign_in(user, pass, channel) {
     };
     client = new tmi.client(opt);
     client.connect();
+}
+
+function new_live_chat(channel) {
+    document.getElementById('live_chat').src = "https://www.twitch.tv/embed/" + channel + "/chat"
 }
