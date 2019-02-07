@@ -35,5 +35,17 @@ function new_sign_in(user, pass, channel) {
 }
 
 function new_live_chat(channel) {
-    document.getElementById('live_chat').src = "https://www.twitch.tv/embed/" + channel + "/chat"
+    document.getElementById('live_chat').src = "https://www.twitch.tv/embed/" + channel + "/chat";
+    document.getElementById('live_chat').style.display = "block";
+}
+
+function toggleChat() {
+    var display = document.getElementById('live_chat').style.display;
+    if (display === 'none') {
+        document.getElementById('live_chat').style.display = "block";
+        document.getElementById('chat_button').innerHTML = 'Hide Chat';
+    } else {
+        document.getElementById('live_chat').style.display = "none";
+        document.getElementById('chat_button').innerHTML = 'Show Chat';
+    }
 }
