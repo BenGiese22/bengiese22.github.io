@@ -1,0 +1,5 @@
+*TODO*
+- Put net.js file into classes for multi-use.
+- Swap to semantic UI
+- Implement reset button. (disconnect function?)
+- Make "cards" wide and draw up design or something. 
